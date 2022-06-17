@@ -1,0 +1,61 @@
+11
+1 2 3 8 9 4 5 6 11 9 10
+
+kq: 1 2 3 4 5 6 9 10
+
+8
+6 5 3 2 3 4 2 7
+9
+4 5 6 2 3 8 9 6 1
+
+
+
+
+
+
+//		cout<<"i: "<<i<<" ";
+//		if((l[i]==l[i-1]+1) && (a[i-1]<a[i]))
+//			kq[nKQ++]=a[i];
+//		else{
+//			i--;
+//		}
+//		while(l[i]==l[i-1])
+//			i--;
+//		if (a[i-1]<a[i] &&(l[i]==l[i-1]+1) ) {
+//			cout<<a[i]<<" ";
+//		}
+//		int j=n;
+//		while(true){
+//			if(l[i]==l[j]+1) && (a[j]<a[i])){
+//				kq[nKQ++]=a[i];
+//			}
+//			j--;
+//		}
+
+
+int t=0;
+	int tong =0;
+	nc=0;
+	int vitri=0;
+	int max=0;
+	for (int i=0; i<nb-1; i++) {
+		while (b[i]<b[i+1]) {
+			tong+=b[i];
+			i++;
+		}
+		tong+=b[i];
+		t=tong;
+		vitri=i;
+		cout<<vitri<<" ";
+		cout<<t<<endl;
+//		c[nc++]=t;
+//		if (t>max){
+//			max=t;
+//			vitri=i--;
+//			cout<<vitri;
+//		}
+
+//		vitri=i;
+		tong=0;
+	}
+	cout<<max;
